@@ -5,6 +5,6 @@ def Calculate(Temperature):
     Temperature = str(Temperature) + "°C"
     return Celsius, Temperature
 
-weather = Calculate(Temperature)
-print(weather[0])
-print(weather[1])
+Celsius = Calculate(Temperature)[1]
+Temperature = Calculate(Temperature)[0]
+print(f"您输入的是{Temperature}，转换后的华氏度为{Celsius}")
